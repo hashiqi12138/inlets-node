@@ -1,0 +1,16 @@
+{
+  "clearMocks": true,
+  "coverageDirectory": "coverage",
+  "coverageProvider": "v8",
+  "moduleFileExtensions": ["vue", "js", "json", "jsx", "ts", "tsx", "node"],
+  "moduleNameMapper": {
+    "^@/(.+)": "<rootDir>/src/components/$1"
+  },
+  "preset": "ts-jest",
+  "testEnvironment": "jsdom",
+  "transformIgnorePatterns": ["/node_modules/(?!@vue/test-utils|vue-jest|vue)"],
+  "testMatch": ["<rootDir>/test/*.spec.ts?(x)", "**/__test__/**/*.spec.[t]s?(x)", "<rootDir>/src/__test__/*.spec.[t]s?(x)"],
+  "transform": {
+    "^.+\\js$": "babel-jest"
+  }
+}
